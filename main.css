@@ -1,0 +1,84 @@
+body {
+    background: #EDF2F8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.wrapper {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    width: 96%;
+    margin: 50px auto;
+}
+.author img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid violet;
+}
+h4 {
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
+.author {
+    width: 165px;
+    display: flex;
+    justify-content: space-between;
+}
+span {
+    color: hsl(0, 0%, 70%);
+}
+.content {
+    border-radius: 10px;
+    padding: 30px;
+}
+.content-daniel {
+    background: #733FC8;
+    color: white;
+    grid-column: span 2;
+    position: relative;
+}
+.content-daniel h3 {
+    position: relative;
+}
+.content-daniel h4 {
+    position: relative;
+}
+.quotation {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    width: 18%;
+    z-index: 0;
+}
+.content-jonathan {
+    background: #49556B;
+    color: white;
+}
+.content-jeanette {
+    background: #FFFFFF;
+    color: black;
+}
+.content-patrick {
+    background: #18202D;
+    color: white;
+    grid-column: span 2;
+}
+.content-kira {
+    background: #FFFFFF;
+    color: black;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+@media screen and (max-width:700px) {
+    .wrapper {
+        width: 96%;
+        display: block;
+        margin: 25px auto;
+    }
+    .content {
+        margin: 25px 0;
+    }
+    
+}
